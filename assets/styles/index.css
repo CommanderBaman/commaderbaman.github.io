@@ -1,0 +1,140 @@
+/* Removing outlines */
+::-moz-focus-inner {
+  border: 0;
+}
+
+:focus {
+  outline: none;
+}
+
+/* color variables */
+:root {
+  /* main colors */
+  --clr-bg-primary: #000;
+  --clr-bg-secondary: #fff;
+  --clr-bg-primary-faded: #000c;
+  --clr-font-primary: #fff;
+  --clr-font-secondary: #000;
+  --clr-font-tertiary: #010101;
+  --clr-font-quaternary: #0ff;
+  --clr-head-primary: #0ff;
+  --clr-head-secondary: #fff;
+  --clr-head-tertiary: #010101;
+  --clr-border-primary: #fff;
+  --clr-border-secondary: #000;
+  --clr-border-tertiary: #707070;
+  --clr-shadow-primary: #333;
+  --clr-shadow-secondary: #64646f33;
+
+  /* custom colors */
+  --white: #fff;
+  --facebook-blue: #4267b2;
+  --linkedin-blue: #2867b2;
+  --insta-pink: #8a3ab9;
+  --navbar-bg: #1a0f52cc;
+  --navbar-lines: #fffb;
+  --navbar-animation-block: #0ff;
+  --navbar-block: #0ff;
+  --navbar-link-hover: #0ff;
+  --form-submit-bg: #0ff;
+  --gmail-red: #bb001b;
+  --youtube-red: #f00;
+
+  /* fonts */
+  --head-font: 'Gill Sans', -apple-system, blinkmacsystemfont, segoe ui, arial,
+    noto sans, sans-serif;
+  --para-font-primary: 'Abel', -apple-system, blinkmacsystemfont, segoe ui,
+    arial, noto sans, sans-serif;
+  --para-font-secondary: 'Helvetica', -apple-system, blinkmacsystemfont,
+    segoe ui, arial, noto sans, sans-serif;
+
+  /* for conversions */
+  --px-to-vh: 0.09259259259259259vh;
+  --px-to-vw: 0.052083333333333336vw;
+  --px-to-rem: 0.0625rem;
+
+  /* common font sizes */
+  --font-size-16: max(12px, calc(18 * var(--px-to-vw)));
+  --font-size-20: max(16px, calc(24 * var(--px-to-vw)));
+  --font-size-24: max(20px, calc(29 * var(--px-to-vw)));
+  --font-size-32: max(28px, calc(40 * var(--px-to-vw)));
+  --icon-size: max(28px, calc(40 * var(--px-to-vw)));
+
+  /* heading sizes */
+  --h1-size: max(40px, calc(60 * var(--px-to-vw)));
+  --h2-size: max(36px, calc(54 * var(--px-to-vw)));
+  --h3-size: max(32px, calc(48 * var(--px-to-vw)));
+  --small-heads: max(24px, calc(32 * var(--px-to-vw)));
+
+  /* other common sizes */
+  --border-radius-8: 0.5rem;
+  --border-radius-16: 1rem;
+  --border-radius-32: 2rem;
+  --border-size-1: 0.15rem;
+  --border-size-2: 0.3rem;
+}
+
+/* Global Settings */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--clr-bg-primary);
+  color: var(--clr-font-primary);
+  font-family: var(--para-font-primary);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* adding font styles + length */
+:is(h1, h2) {
+  font-family: var(--head-font);
+  color: var(--clr-head-primary);
+}
+
+body,
+button {
+  font-size: var(--font-size-16);
+}
+
+h1 {
+  font-size: var(--h1-size);
+  font-weight: bold;
+}
+
+h2 {
+  font-size: var(--h2-size);
+  font-weight: bolder;
+}
+
+h3 {
+  font-size: var(--h3-size);
+  font-weight: 600;
+}
+
+:is(h4, h5, h6) {
+  font-size: var(--small-heads);
+}
+
+img {
+  border-radius: var(--border-radius-8);
+}
+
+@media only screen and (min-width: 48em) {
+  :root {
+    /* common font sizes */
+    --font-size-16: max(16px, calc(24 * var(--px-to-vw)));
+    --font-size-20: max(20px, calc(29 * var(--px-to-vw)));
+    --font-size-24: max(24px, calc(32 * var(--px-to-vw)));
+    --font-size-32: max(32px, calc(45 * var(--px-to-vw)));
+    --icon-size: max(32px, calc(48 * var(--px-to-vw)));
+
+    /* heading sizes */
+    --h1-size: max(80px, calc(120 * var(--px-to-vw)));
+    --h2-size: max(50px, calc(75 * var(--px-to-vw)));
+    --h3-size: max(40px, calc(60 * var(--px-to-vw)));
+    --small-heads: max(28px, calc(40 * var(--px-to-vw)));
+  }
+}

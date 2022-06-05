@@ -1,15 +1,15 @@
 <template>
-  <div class="index-page">Hello There!</div>
+  <div class="about-page">About</div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
 
 export default Vue.extend({
-  name: 'IndexPage',
+  name: 'AboutPage',
 })
 </script>
 
 <style scoped>
-@import '~/assets/styles/pages/index.css';
+@import '~/assets/styles/pages/about.css';
 </style>
