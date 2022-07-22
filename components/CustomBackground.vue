@@ -12,7 +12,7 @@
           left: `${positionYArray[index]}%`,
         }"
         :radius="radius"
-        :color="'white'"
+        :color="'var(--clr-primary)'"
       />
     </div>
     <div class="backdrop-filter"></div>
