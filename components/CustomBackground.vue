@@ -6,12 +6,16 @@
       class="circle-container"
     >
       <ShapeColoredCircle
+        :style="{
+          position: 'absolute',
+          top: `${positionXArray[index]}%`,
+          left: `${positionYArray[index]}%`,
+        }"
         :radius="radius"
         :color="'white'"
-        :position-x="positionXArray[index]"
-        :position-y="positionYArray[index]"
       />
     </div>
+    <div class="backdrop-filter"></div>
   </div>
 </template>
 
@@ -20,12 +24,12 @@ import { getRandomInteger } from '~/tools/DataHandler'
 
 export default {
   data() {
-    let total = 100
+    let total = 300
     const circleRadii = []
     const positionXArray = []
     const positionYArray = []
     while (total > 0) {
-      const radii = getRandomInteger(0, total)
+      const radii = getRandomInteger(0, Math.min(total, 30))
       const positionX = getRandomInteger(0, 100)
       const positionY = getRandomInteger(0, 100)
       total -= radii

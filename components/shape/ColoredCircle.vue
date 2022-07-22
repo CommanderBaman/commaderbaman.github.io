@@ -1,7 +1,14 @@
 <template>
   <div class="colored-circle-container">
-    Radius: {{ $props.radius }} Color: {{ $props.color }} X:
-    {{ $props.positionX }} Y: {{ $props.positionY }}
+    <div
+      class="circle"
+      :style="{
+        width: `${$props.radius * 2}px`,
+        height: `${$props.radius * 2}px`,
+        backgroundColor: $props.color,
+        color: $props.color,
+      }"
+    />
   </div>
 </template>
 
@@ -14,14 +21,6 @@ export default {
     },
     color: {
       type: String,
-      required: true,
-    },
-    positionX: {
-      type: Number,
-      required: true,
-    },
-    positionY: {
-      type: Number,
       required: true,
     },
   },
