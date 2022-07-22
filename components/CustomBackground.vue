@@ -15,7 +15,6 @@
         :color="'var(--clr-primary)'"
       />
     </div>
-    <div class="backdrop-filter"></div>
   </div>
 </template>
 
