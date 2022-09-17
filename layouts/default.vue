@@ -1,5 +1,6 @@
 <template>
   <div>
+    <CustomBackground />
     <div class="nuxt-main-container">
       <Nuxt />
     </div>

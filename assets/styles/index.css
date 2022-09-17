@@ -9,22 +9,21 @@
 
 /* color variables */
 :root {
+  /* source: https://material.io/design/color/dark-theme.html#ui-application */
+  --clr-primary: #bb86fc; /* #6200ee; */
+  --clr-primary-variant: #3700be;
+  --clr-secondary: #03dac6;
+  --clr-secondary-variant: #03dac6;
+  --clr-bg: #121212;
+  --clr-surface: #121212;
+  --clr-error: #cf6679;
+
+  --clr-on-primary: #000000;
+  --clr-on-secondary: #000000;
+  --clr-on-bg: #ffffff;
+  --clr-on-surface: #ffffff;
+  --clr-on-error: #000000;
   /* main colors */
-  --clr-bg-primary: #000;
-  --clr-bg-secondary: #fff;
-  --clr-bg-primary-faded: #000c;
-  --clr-font-primary: #fff;
-  --clr-font-secondary: #000;
-  --clr-font-tertiary: #010101;
-  --clr-font-quaternary: #0ff;
-  --clr-head-primary: #0ff;
-  --clr-head-secondary: #fff;
-  --clr-head-tertiary: #010101;
-  --clr-border-primary: #fff;
-  --clr-border-secondary: #000;
-  --clr-border-tertiary: #707070;
-  --clr-shadow-primary: #333;
-  --clr-shadow-secondary: #64646f33;
 
   /* custom colors */
   --white: #fff;
@@ -82,8 +81,8 @@
 }
 
 body {
-  background-color: var(--clr-bg-primary);
-  color: var(--clr-font-primary);
+  background-color: var(--clr-bg);
+  color: var(--clr-on-bg);
   font-family: var(--para-font-primary);
   -webkit-font-smoothing: antialiased;
 }
@@ -91,7 +90,7 @@ body {
 /* adding font styles + length */
 :is(h1, h2) {
   font-family: var(--head-font);
-  color: var(--clr-head-primary);
+  color: var(--clr-primary);
 }
 
 body,
