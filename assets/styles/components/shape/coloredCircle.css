@@ -2,8 +2,23 @@
   position: absolute;
 }
 
+@keyframes fadeInOut {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .circle {
   border-radius: 50%;
   filter: brightness(80%) blur(9px);
   box-shadow: 0 0 10px;
+  animation-name: fadeInOut;
+  animation-iteration-count: infinite;
+  animation-duration: inherit;
 }
