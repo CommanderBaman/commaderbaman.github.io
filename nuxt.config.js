@@ -55,20 +55,13 @@ export default {
   fontawesome: {
     component: 'fa',
     icons: {
-      brands: [
-        'faFacebookSquare',
-        'faInstagramSquare',
-        'faLinkedin',
-        'faYoutube',
-      ],
+      brands: ['faFacebookSquare', 'faInstagramSquare', 'faLinkedin'],
       solid: [
-        'faBook',
-        'faPhone',
-        'faSquarePhoneFlip',
-        'faPhoneVolume',
-        'faTimes',
-        'faChevronRight',
-        'faChevronLeft',
+        'faAddressCard', // about
+        'faBook', // blog
+        'faCodeFork', // project
+        'faHouse', // home
+        'faPhone', // contact
       ],
     },
   },

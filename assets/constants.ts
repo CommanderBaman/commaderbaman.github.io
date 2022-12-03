@@ -3,13 +3,13 @@ export const routes = [
     path: '/about',
     name: 'About',
     id: 0,
-    icon: ['fas', 'book'],
+    icon: ['fas', 'address-card'],
   },
   {
     path: '/projects',
     name: 'Projects',
     id: 1,
-    icon: ['fas', 'square-phone-flip'],
+    icon: ['fas', 'code-fork'],
   },
   {
     path: '/blog',
@@ -27,6 +27,6 @@ export const routes = [
     path: '/',
     name: 'Home',
     id: 4,
-    icon: ['fas', 'square-phone-flip'],
+    icon: ['fas', 'house'],
   },
 ]
