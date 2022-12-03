@@ -24,6 +24,6 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 @import '~/assets/styles/components/navigation/lineBar.css';
 </style>
