@@ -27,5 +27,5 @@ export default {
 </script>
 
 <style>
-@import '~/assets/styles/components/navigation/mainIcon.css';
+@import '~/assets/styles/components/navigation/dotIcon.css';
 </style>

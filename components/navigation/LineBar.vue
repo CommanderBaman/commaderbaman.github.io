@@ -2,7 +2,7 @@
   <nav class="navbar">
     <ul class="links-container">
       <li v-for="route in routes" :key="route.id" class="link-wrapper">
-        <NavigationMainIcon
+        <NavigationLineIcon
           :icon="route.icon"
           :route-link="route.path"
           :route-name="route.name"
@@ -25,5 +25,5 @@ export default {
 </script>
 
 <style>
-@import '~/assets/styles/components/navigation/mainBar.css';
+@import '~/assets/styles/components/navigation/lineBar.css';
 </style>
