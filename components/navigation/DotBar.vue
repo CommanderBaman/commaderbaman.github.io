@@ -2,7 +2,7 @@
   <nav class="navbar">
     <ul class="links-container">
       <li v-for="route in routes" :key="route.id" class="link-wrapper">
-        <NavigationMainIcon
+        <NavigationDotIcon
           :icon="route.icon"
           :route-link="route.path"
           :route-name="route.name"
@@ -24,6 +24,6 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 @import '~/assets/styles/components/navigation/dotBar.css';
 </style>

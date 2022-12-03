@@ -1,8 +1,10 @@
 <template>
   <NuxtLink class="nav-icon-wrapper" :to="$props.routeLink">
-    <div class="nav-icon">
-      <fa class="nav-icon-icon" :icon="$props.icon" />
+    <div class="nav-container">
       <h2 class="nav-link">{{ $props.routeName }}</h2>
+      <div class="nav-icon-container">
+        <fa class="nav-icon" :icon="$props.icon" />
+      </div>
     </div>
   </NuxtLink>
 </template>
@@ -26,6 +28,6 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 @import '~/assets/styles/components/navigation/dotIcon.css';
 </style>

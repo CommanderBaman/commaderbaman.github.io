@@ -4,12 +4,6 @@
   left: 2vw;
   top: 50%;
   transform: translate(0, -50%);
-
-  border: var(--border-size-0) solid var(--clr-on-surface);
-  box-shadow: 0 0 5px var(--clr-on-surface);
-  background-color: var(--clr-surface);
-  border-radius: var(--border-radius-16);
-  overflow: hidden;
 }
 
 .links-container {
@@ -22,4 +16,5 @@
 
 .link-wrapper {
   width: 100%;
+  margin: 0.5em;
 }
