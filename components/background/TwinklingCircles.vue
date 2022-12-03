@@ -51,5 +51,5 @@ export default {
 </script>
 
 <style scoped>
-@import '~/assets/styles/components/customBackground.css';
+@import '~/assets/styles/components/background/twinklingCircles.css';
 </style>

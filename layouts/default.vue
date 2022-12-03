@@ -1,6 +1,6 @@
 <template>
   <div>
-    <CustomBackground />
+    <BackgroundTwinklingCircles />
     <div class="nuxt-main-container">
       <Nuxt />
     </div>
