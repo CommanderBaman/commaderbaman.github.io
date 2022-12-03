@@ -64,7 +64,7 @@
 
   /* heading and iconsizes */
   --icon-size: var(--font-size-32);
-  --small-icon-size: var(--font-size-24);
+  --small-icon-size: var(--font-size-28);
   --h1-size: var(--font-size-44);
   --h2-size: var(--font-size-36);
   --h3-size: var(--font-size-32);
@@ -74,7 +74,7 @@
   --border-radius-8: 0.5rem;
   --border-radius-16: 1rem;
   --border-radius-32: 2rem;
-  --border-size-0: 0.01rem;
+  --border-size-0: 0.1px;
   --border-size-1: 0.15rem;
   --border-size-2: 0.3rem;
 

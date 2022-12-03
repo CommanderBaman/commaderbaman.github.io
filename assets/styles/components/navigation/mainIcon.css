@@ -20,8 +20,7 @@
   justify-content: center;
   align-items: center;
 
-  /* margin: 0.2em 0; */
-  padding: 1.2em 1em;
+  padding: 1.2em 0.5em;
 }
 
 .nav-icon-icon {
@@ -29,9 +28,10 @@
 }
 
 .nav-link {
-  font-size: var(--font-size-20);
+  font-size: var(--font-size-16);
   text-transform: lowercase;
   font-weight: normal;
+  font-family: var(--para-font-secondary);
 
   margin-top: 0.5em;
 
