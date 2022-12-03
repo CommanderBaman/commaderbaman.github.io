@@ -3,6 +3,7 @@
     <ul class="links-container">
       <li v-for="route in routes" :key="route.id" class="link-wrapper">
         <h3 class="link">
+          <fa :icon="route.icon" />
           <NuxtLink :to="route.path">{{ route.name }}</NuxtLink>
         </h3>
       </li>

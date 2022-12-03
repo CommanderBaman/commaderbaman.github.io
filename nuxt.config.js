@@ -35,6 +35,8 @@ export default {
     '@nuxt/typescript-build',
     // https://go.nuxtjs.dev/stylelint
     '@nuxtjs/stylelint-module',
+    // fontawesome
+    '@nuxtjs/fontawesome',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -48,4 +50,26 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
+
+  // icons to load in fontawesome
+  fontawesome: {
+    component: 'fa',
+    icons: {
+      brands: [
+        'faFacebookSquare',
+        'faInstagramSquare',
+        'faLinkedin',
+        'faYoutube',
+      ],
+      solid: [
+        'faBook',
+        'faPhone',
+        'faSquarePhoneFlip',
+        'faPhoneVolume',
+        'faTimes',
+        'faChevronRight',
+        'faChevronLeft',
+      ],
+    },
+  },
 }
