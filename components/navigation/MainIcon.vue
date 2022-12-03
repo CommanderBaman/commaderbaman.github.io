@@ -1,10 +1,10 @@
 <template>
-  <div class="nav-link-wrapper">
-    <h3 class="nav-link">
-      <fa :icon="$props.icon" />
-      <NuxtLink :to="$props.routeLink">{{ $props.routeName }}</NuxtLink>
-    </h3>
-  </div>
+  <NuxtLink class="nav-icon-wrapper" :to="$props.routeLink">
+    <div class="nav-icon">
+      <fa class="nav-icon-icon" :icon="$props.icon" />
+      <h2 class="nav-link">{{ $props.routeName }}</h2>
+    </div>
+  </NuxtLink>
 </template>
 
 <script lang="ts">
