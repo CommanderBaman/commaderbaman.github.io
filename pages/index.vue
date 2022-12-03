@@ -1,5 +1,20 @@
 <template>
-  <div class="index-page">Hello There!</div>
+  <div class="index-page">
+    <div class="moon">
+      <div class="text-container">
+        <h2 class="greeting">Hello There!</h2>
+      </div>
+      <div class="skiing-man">
+        <fa :icon="['fas', 'person-skiing']" />
+      </div>
+
+      <div class="spot spot-1" />
+      <div class="spot spot-2" />
+      <div class="spot spot-3" />
+      <div class="spot spot-4" />
+      <!-- <div class="spot spot-5" /> -->
+    </div>
+  </div>
 </template>
 
 <script lang="ts">

@@ -65,6 +65,7 @@ export default {
         'faCodeFork', // project
         'faHouse', // home
         'faPhone', // contact
+        'faPersonSkiing', // on index page
       ],
     },
   },
