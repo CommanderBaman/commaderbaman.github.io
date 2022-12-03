@@ -1,0 +1,23 @@
+.watermark-wrapper {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+
+  margin: 2em;
+}
+
+.contact-row {
+  display: flex;
+  justify-content: right;
+}
+
+.contact-icon {
+  margin: 0 0.2em;
+}
+
+.name {
+  padding: 0.1em;
+  text-transform: uppercase;
+  color: var(--clr-on-bg);
+  font-size: var(--font-size-20);
+}

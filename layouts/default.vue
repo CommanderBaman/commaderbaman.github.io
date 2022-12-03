@@ -5,6 +5,7 @@
       <Nuxt />
     </div>
     <NavigationMainBar />
+    <NameWatermark />
   </div>
 </template>
 

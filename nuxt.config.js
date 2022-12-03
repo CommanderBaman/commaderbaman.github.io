@@ -57,13 +57,14 @@ export default {
   fontawesome: {
     component: 'fa',
     icons: {
-      brands: ['faFacebookSquare', 'faInstagramSquare', 'faLinkedin'],
+      brands: ['faFacebook', 'faInstagram', 'faLinkedin', 'faGithub'],
       solid: [
         'faAddressCard', // about
         'faBook', // blog
         'faCodeFork', // project
         'faHouse', // home
         'faPhone', // contact
+        'faEnvelope', // contact via mail
       ],
     },
   },
