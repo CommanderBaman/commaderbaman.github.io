@@ -6,21 +6,27 @@ export const routes = [
     icon: ['fas', 'book'],
   },
   {
+    path: '/projects',
+    name: 'Projects',
+    id: 1,
+    icon: ['fas', 'square-phone-flip'],
+  },
+  {
     path: '/blog',
     name: 'Blog',
-    id: 1,
+    id: 2,
     icon: ['fas', 'book'],
   },
   {
     path: '/contact',
     name: 'Contact',
-    id: 2,
+    id: 3,
     icon: ['fas', 'phone'],
   },
   {
     path: '/',
     name: 'Home',
-    id: 3,
+    id: 4,
     icon: ['fas', 'square-phone-flip'],
   },
 ]
