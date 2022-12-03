@@ -1,5 +1,11 @@
 export const routes = [
   {
+    path: '/',
+    name: 'Home',
+    id: 4,
+    icon: ['fas', 'house'],
+  },
+  {
     path: '/about',
     name: 'About',
     id: 0,
@@ -22,11 +28,5 @@ export const routes = [
     name: 'Contact',
     id: 3,
     icon: ['fas', 'phone'],
-  },
-  {
-    path: '/',
-    name: 'Home',
-    id: 4,
-    icon: ['fas', 'house'],
   },
 ]

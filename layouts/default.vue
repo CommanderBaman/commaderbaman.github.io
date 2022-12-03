@@ -4,7 +4,8 @@
     <div class="nuxt-main-container">
       <Nuxt />
     </div>
-    <NavigationMainBar />
+    <NavigationDotBar />
+    <NameWatermark />
   </div>
 </template>
 

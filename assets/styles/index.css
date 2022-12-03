@@ -15,7 +15,7 @@
   --clr-secondary: #03dac6;
   --clr-secondary-variant: #03dac6;
   --clr-bg: #121212;
-  --clr-surface: #121212;
+  --clr-surface: #2b2b2b;
   --clr-error: #cf6679;
 
   --clr-on-primary: #000000;
@@ -67,9 +67,11 @@
   --font-size-36: max(32px, calc(48 * var(--px-to-vw)));
   --font-size-40: max(36px, calc(54 * var(--px-to-vw)));
   --font-size-44: max(40px, calc(60 * var(--px-to-vw)));
+  --font-size-48: max(44px, calc(64 * var(--px-to-vw)));
 
   /* heading and iconsizes */
   --icon-size: var(--font-size-32);
+  --large-icon-size: var(--font-size-48);
   --small-icon-size: var(--font-size-28);
   --h1-size: var(--font-size-44);
   --h2-size: var(--font-size-36);

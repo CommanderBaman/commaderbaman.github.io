@@ -26,6 +26,6 @@ export default {
 }
 </script>
 
-<style>
-@import '~/assets/styles/components/navigation/mainIcon.css';
+<style scoped>
+@import '~/assets/styles/components/navigation/lineIcon.css';
 </style>
