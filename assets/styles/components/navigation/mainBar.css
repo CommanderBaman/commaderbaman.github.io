@@ -1,0 +1,23 @@
+.navbar {
+  position: fixed;
+
+  left: 5vw;
+  top: 50%;
+  transform: translate(0, -50%);
+
+  width: 7vw;
+}
+
+.links-container {
+  display: flex;
+
+  background-color: green;
+
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.link-wrapper {
+  width: 100%;
+}
