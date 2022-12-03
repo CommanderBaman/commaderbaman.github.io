@@ -5,13 +5,14 @@
   top: 50%;
   transform: translate(0, -50%);
 
-  width: 7vw;
+  border: var(--border-size-0) solid var(--clr-on-surface);
+  background-color: var(--clr-surface);
+  border-radius: var(--border-radius-16);
+  overflow: hidden;
 }
 
 .links-container {
   display: flex;
-
-  background-color: green;
 
   flex-direction: column;
   justify-content: space-between;
