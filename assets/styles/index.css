@@ -40,12 +40,18 @@
   --youtube-red: #f00;
 
   /* fonts */
-  --head-font: 'Gill Sans', -apple-system, blinkmacsystemfont, segoe ui, arial,
-    noto sans, sans-serif;
-  --para-font-primary: 'Abel', -apple-system, blinkmacsystemfont, segoe ui,
-    arial, noto sans, sans-serif;
-  --para-font-secondary: 'Helvetica', -apple-system, blinkmacsystemfont,
-    segoe ui, arial, noto sans, sans-serif;
+  --head-font: 'Poppins', -apple-system, blinkmacsystemfont, segoe ui, arial,
+    noto sans, sans-serif; /* Gill Sans */
+  --para-font-primary: 'Open Sans', -apple-system, blinkmacsystemfont, segoe ui,
+    arial, noto sans, sans-serif; /* Abel */
+  --para-font-secondary: 'Nunito Sans', -apple-system, blinkmacsystemfont,
+    segoe ui, arial, noto sans, sans-serif; /* Helvetica */
+
+  /*
+    fonts considered
+    head = Abel, Gill Sans
+    body = Nunito Sans, Helvetica, Inter
+  */
 
   /* for conversions */
   --px-to-vh: 0.09259259259259259vh;

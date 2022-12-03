@@ -37,6 +37,8 @@ export default {
     '@nuxtjs/stylelint-module',
     // fontawesome
     '@nuxtjs/fontawesome',
+    // google fonts
+    '@nuxtjs/google-fonts',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -63,6 +65,17 @@ export default {
         'faHouse', // home
         'faPhone', // contact
       ],
+    },
+  },
+
+  // fonts to load from google fonts
+  googleFonts: {
+    families: {
+      'Nunito+Sans': true,
+      Abel: true,
+      Inter: true,
+      Poppins: true,
+      'Open+Sans': true,
     },
   },
 }

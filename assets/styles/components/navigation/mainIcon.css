@@ -29,9 +29,7 @@
 
 .nav-link {
   font-size: var(--font-size-16);
-  text-transform: lowercase;
-  font-weight: normal;
-  font-family: var(--para-font-secondary);
+  text-transform: uppercase;
 
   margin-top: 0.5em;
 

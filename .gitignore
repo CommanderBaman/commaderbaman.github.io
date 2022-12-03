@@ -88,3 +88,8 @@ sw.*
 
 # Vim swap files
 *.swp
+
+# custom
+# google font files
+assets/css
+assets/fonts
