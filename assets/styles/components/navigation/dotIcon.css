@@ -32,6 +32,12 @@
   z-index: -1;
 }
 
+.nav-active {
+  background-color: var(--clr-primary);
+  color: var(--clr-on-primary);
+  border-radius: 50%;
+}
+
 .nav-icon-wrapper:hover .nav-link,
 .nav-icon-wrapper:hover .nav-icon-container {
   background-color: var(--clr-primary);
