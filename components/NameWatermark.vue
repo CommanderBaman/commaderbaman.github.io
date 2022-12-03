@@ -1,6 +1,7 @@
 <template>
   <div class="watermark-wrapper">
     <div class="name-row">
+      <p class="sign">Made by</p>
       <h1 class="name">Shubham Ojha</h1>
     </div>
     <div class="contact-row">
@@ -42,7 +43,7 @@
         target="_blank"
         class="mail contact-link"
       >
-        <fa class="contact-icon" :icon="['fas', 'envelope']" />
+        <fa class="contact-icon" :icon="['far', 'envelope']" />
       </a>
     </div>
   </div>

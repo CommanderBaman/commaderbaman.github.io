@@ -58,13 +58,13 @@ export default {
     component: 'fa',
     icons: {
       brands: ['faFacebook', 'faInstagram', 'faLinkedin', 'faGithub'],
+      regular: ['faEnvelope'],
       solid: [
         'faAddressCard', // about
         'faBook', // blog
         'faCodeFork', // project
         'faHouse', // home
         'faPhone', // contact
-        'faEnvelope', // contact via mail
       ],
     },
   },
