@@ -56,21 +56,31 @@
   --font-size-16: max(12px, calc(18 * var(--px-to-vw)));
   --font-size-20: max(16px, calc(24 * var(--px-to-vw)));
   --font-size-24: max(20px, calc(29 * var(--px-to-vw)));
+  --font-size-28: max(24px, calc(32 * var(--px-to-vw)));
   --font-size-32: max(28px, calc(40 * var(--px-to-vw)));
-  --icon-size: max(28px, calc(40 * var(--px-to-vw)));
+  --font-size-36: max(32px, calc(48 * var(--px-to-vw)));
+  --font-size-40: max(36px, calc(54 * var(--px-to-vw)));
+  --font-size-44: max(40px, calc(60 * var(--px-to-vw)));
 
-  /* heading sizes */
-  --h1-size: max(40px, calc(60 * var(--px-to-vw)));
-  --h2-size: max(36px, calc(54 * var(--px-to-vw)));
-  --h3-size: max(32px, calc(48 * var(--px-to-vw)));
-  --small-heads: max(24px, calc(32 * var(--px-to-vw)));
+  /* heading and iconsizes */
+  --icon-size: var(--font-size-32);
+  --small-icon-size: var(--font-size-28);
+  --h1-size: var(--font-size-44);
+  --h2-size: var(--font-size-36);
+  --h3-size: var(--font-size-32);
+  --small-heads: var(--font-size-28);
 
   /* other common sizes */
   --border-radius-8: 0.5rem;
   --border-radius-16: 1rem;
   --border-radius-32: 2rem;
+  --border-size-0: 0.1px;
   --border-size-1: 0.15rem;
   --border-size-2: 0.3rem;
+
+  /* transition times */
+  --short-transition-time: 0.2s;
+  --long-transition-time: 0.7s;
 }
 
 /* Global Settings */

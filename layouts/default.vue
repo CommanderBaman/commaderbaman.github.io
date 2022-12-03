@@ -4,7 +4,7 @@
     <div class="nuxt-main-container">
       <Nuxt />
     </div>
-    <NavigationBar />
+    <NavigationMainBar />
   </div>
 </template>
 

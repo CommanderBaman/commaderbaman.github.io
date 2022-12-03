@@ -2,9 +2,11 @@
   <nav class="navbar">
     <ul class="links-container">
       <li v-for="route in routes" :key="route.id" class="link-wrapper">
-        <h3 class="link">
-          <NuxtLink :to="route.path">{{ route.name }}</NuxtLink>
-        </h3>
+        <NavigationMainIcon
+          :icon="route.icon"
+          :route-link="route.path"
+          :route-name="route.name"
+        />
       </li>
     </ul>
   </nav>
@@ -23,5 +25,5 @@ export default {
 </script>
 
 <style>
-@import '~/assets/styles/components/navigationBar.css';
+@import '~/assets/styles/components/navigation/mainBar.css';
 </style>
