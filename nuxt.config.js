@@ -72,10 +72,8 @@ export default {
   googleFonts: {
     families: {
       'Nunito+Sans': true,
-      Abel: true,
-      Inter: true,
-      Poppins: true,
       'Open+Sans': true,
+      Poppins: true,
     },
   },
 }
