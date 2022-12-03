@@ -16,7 +16,7 @@
 
 .circle {
   border-radius: 50%;
-  filter: brightness(80%) blur(9px);
+  filter: brightness(80%) blur(2px);
   box-shadow: 0 0 10px;
   animation-name: fadeInOut;
   animation-iteration-count: infinite;
