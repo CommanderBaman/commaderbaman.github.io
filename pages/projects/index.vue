@@ -1,8 +1,11 @@
 <template>
   <div class="projects-page">
     <div class="heading-section">
-      <h1>Projects</h1>
-      <h2>My Work</h2>
+      <h1 class="back-heading">Projects</h1>
+      <h2 class="main-heading">
+        My
+        <span class="heading-highlight">Work</span>
+      </h2>
     </div>
     <div class="content-section">
       <div
@@ -45,5 +48,6 @@ export default Vue.extend({
 </script>
 
 <style scoped>
+@import '~/assets/styles/pages/heading-section.css';
 @import '~/assets/styles/pages/projects.css';
 </style>
