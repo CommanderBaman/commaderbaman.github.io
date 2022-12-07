@@ -42,7 +42,6 @@ export default Vue.extend({
         PROJECT_CONTENT_TITLES.COVER_IMAGE,
       ])
       .fetch()
-    console.log(projectData)
     return { projectData }
   },
   data() {
