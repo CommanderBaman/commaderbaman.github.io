@@ -1,0 +1,49 @@
+<template>
+  <div class="projects-page">
+    <div class="heading-section">
+      <h1>Projects</h1>
+      <h2>My Work</h2>
+    </div>
+    <div class="content-section">
+      <div
+        v-for="project in projectData"
+        :key="project[PROJECT_CONTENT_TITLES.TITLE]"
+        class="project-wrapper"
+      >
+        {{ project[PROJECT_CONTENT_TITLES.TITLE] }} ||
+        {{ project[PROJECT_CONTENT_TITLES.DESCRIPTION] }} ||
+        {{ project[PROJECT_CONTENT_TITLES.COVER_PHOTO] }}
+      </div>
+    </div>
+  </div>
+</template>
+
+<script lang="ts">
+import { Context } from '@nuxt/types'
+import Vue from 'vue'
+import {
+  PROJECT_CONTENT_ROUTE,
+  PROJECT_CONTENT_TITLES,
+} from '~/assets/constants'
+
+export default Vue.extend({
+  name: 'ProjectsPage',
+  async asyncData({ $content }: Context) {
+    const projectData = await $content(PROJECT_CONTENT_ROUTE)
+      .only([
+        PROJECT_CONTENT_TITLES.TITLE,
+        PROJECT_CONTENT_TITLES.DESCRIPTION,
+        PROJECT_CONTENT_TITLES.COVER_PHOTO,
+      ])
+      .fetch()
+    return { projectData }
+  },
+  data() {
+    return { PROJECT_CONTENT_TITLES }
+  },
+})
+</script>
+
+<style scoped>
+@import '~/assets/styles/pages/projects.css';
+</style>

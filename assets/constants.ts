@@ -30,3 +30,19 @@ export const routes = [
     icon: ['fas', 'phone'],
   },
 ]
+
+// for nuxt content
+export const BLOG_CONTENT_ROUTE = 'blog'
+export const PROJECT_CONTENT_ROUTE = 'project'
+
+export const BLOG_CONTENT_TITLES = {
+  TITLE: 'title',
+  DESCRIPTION: 'description',
+  COVER_PHOTO: 'cover-photo',
+  DATE_ADDED: 'date-added',
+}
+export const PROJECT_CONTENT_TITLES = {
+  TITLE: 'title',
+  DESCRIPTION: 'description',
+  COVER_PHOTO: 'cover-photo',
+}
