@@ -13,9 +13,12 @@
         :key="project[PROJECT_CONTENT_TITLES.TITLE]"
         class="project-wrapper"
       >
-        {{ project[PROJECT_CONTENT_TITLES.TITLE] }} ||
-        {{ project[PROJECT_CONTENT_TITLES.DESCRIPTION] }} ||
-        {{ project[PROJECT_CONTENT_TITLES.COVER_IMAGE] }}
+        <CardWorkDisplay
+          :cover-image-link="project[PROJECT_CONTENT_TITLES.COVER_IMAGE]"
+          :destination-link="project.path"
+          :work-description="project[PROJECT_CONTENT_TITLES.DESCRIPTION]"
+          :work-title="project[PROJECT_CONTENT_TITLES.TITLE]"
+        />
       </div>
     </div>
   </div>
@@ -39,6 +42,7 @@ export default Vue.extend({
         PROJECT_CONTENT_TITLES.COVER_IMAGE,
       ])
       .fetch()
+    console.log(projectData)
     return { projectData }
   },
   data() {
