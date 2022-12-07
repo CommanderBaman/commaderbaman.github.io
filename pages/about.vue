@@ -1,5 +1,12 @@
 <template>
-  <div class="about-page">About</div>
+  <div class="about-page">
+    <div class="heading-section">
+      <h1 class="back-heading">Introduction</h1>
+      <h2 class="main-heading">
+        <span class="heading-highlight"> About</span> Me
+      </h2>
+    </div>
+  </div>
 </template>
 
 <script lang="ts">
@@ -11,5 +18,6 @@ export default Vue.extend({
 </script>
 
 <style scoped>
+@import '~/assets/styles/pages/heading-section.css';
 @import '~/assets/styles/pages/about.css';
 </style>

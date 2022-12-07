@@ -68,8 +68,10 @@
   --font-size-40: max(36px, calc(54 * var(--px-to-vw)));
   --font-size-44: max(40px, calc(60 * var(--px-to-vw)));
   --font-size-48: max(44px, calc(64 * var(--px-to-vw)));
+  --font-size-80: max(76px, calc(96 * var(--px-to-vw)));
+  --font-size-96: max(92px, calc(128 * var(--px-to-vw)));
 
-  /* heading and iconsizes */
+  /* heading and icon sizes */
   --icon-size: var(--font-size-32);
   --large-icon-size: var(--font-size-48);
   --small-icon-size: var(--font-size-28);
@@ -85,6 +87,7 @@
   --border-size-0: 0.1px;
   --border-size-1: 0.15rem;
   --border-size-2: 0.3rem;
+  --border-size-4: 0.5rem;
 
   /* transition times */
   --short-transition-time: 0.2s;
@@ -145,13 +148,20 @@ img {
     --font-size-16: max(16px, calc(24 * var(--px-to-vw)));
     --font-size-20: max(20px, calc(29 * var(--px-to-vw)));
     --font-size-24: max(24px, calc(32 * var(--px-to-vw)));
-    --font-size-32: max(32px, calc(45 * var(--px-to-vw)));
-    --icon-size: max(32px, calc(48 * var(--px-to-vw)));
+    --font-size-28: max(28px, calc(40 * var(--px-to-vw)));
+    --font-size-32: max(32px, calc(48 * var(--px-to-vw)));
+    --font-size-36: max(36px, calc(54 * var(--px-to-vw)));
+    --font-size-40: max(40px, calc(60 * var(--px-to-vw)));
+    --font-size-44: max(44px, calc(68 * var(--px-to-vw)));
+    --font-size-48: max(48px, calc(75 * var(--px-to-vw)));
+    --font-size-80: max(80px, calc(120 * var(--px-to-vw)));
+    --font-size-96: max(96px, calc(144 * var(--px-to-vw)));
 
-    /* heading sizes */
-    --h1-size: max(80px, calc(120 * var(--px-to-vw)));
-    --h2-size: max(50px, calc(75 * var(--px-to-vw)));
-    --h3-size: max(40px, calc(60 * var(--px-to-vw)));
-    --small-heads: max(28px, calc(40 * var(--px-to-vw)));
+    /* heading and icon sizes */
+    --icon-size: var(--font-size-32);
+    --h1-size: var(--font-size-80);
+    --h2-size: var(--font-size-48);
+    --h3-size: var(--font-size-40);
+    --small-heads: var(--font-size-28);
   }
 }

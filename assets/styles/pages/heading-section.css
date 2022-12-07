@@ -1,0 +1,32 @@
+.heading-section {
+  width: 100%;
+  margin: auto;
+
+  position: relative;
+  text-transform: uppercase;
+  user-select: none;
+}
+
+.back-heading {
+  color: var(--clr-surface);
+  margin: 0.5em;
+  text-align: center;
+  font-size: var(--font-size-96);
+  letter-spacing: 0.2ch;
+}
+
+.main-heading {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  color: var(--clr-on-bg);
+  white-space: nowrap;
+}
+
+.heading-highlight {
+  margin: 0 0.5ch;
+  color: var(--clr-primary);
+}
