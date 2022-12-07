@@ -20,15 +20,20 @@
 <script lang="ts">
 import { Context } from '@nuxt/types'
 import Vue from 'vue'
-import { BLOG_CONTENT_TITLES } from '~/assets/constants'
+import {
+  BlogRoute,
+  BLOG_CONTENT_ROUTE,
+  BLOG_CONTENT_TITLES,
+} from '~/assets/constants'
 
 export default Vue.extend({
   async asyncData({ $content, route, redirect }: Context) {
-    const blogData = await $content(route.path)
+    const pagePath =
+      BLOG_CONTENT_ROUTE + '/' + route.path.split('/').slice(2).join('/')
+    const blogData = await $content(pagePath)
       .fetch()
       .catch((_) => {
-        // TODO: change to a variable from constants
-        redirect('/blog')
+        redirect(BlogRoute.path)
       })
     return { blogData }
   },

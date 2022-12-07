@@ -9,13 +9,13 @@
     </div>
     <div class="content-section">
       <div
-        v-for="project in projectData"
+        v-for="project in allProjectData"
         :key="project[PROJECT_CONTENT_TITLES.TITLE]"
         class="project-wrapper"
       >
         <CardWorkDisplay
           :cover-image-link="project[PROJECT_CONTENT_TITLES.COVER_IMAGE]"
-          :destination-link="project.path"
+          :destination-link="project.customPath"
           :work-description="project[PROJECT_CONTENT_TITLES.DESCRIPTION]"
           :work-title="project[PROJECT_CONTENT_TITLES.TITLE]"
         />
@@ -28,6 +28,7 @@
 import { Context } from '@nuxt/types'
 import Vue from 'vue'
 import {
+  ProjectRoute,
   PROJECT_CONTENT_ROUTE,
   PROJECT_CONTENT_TITLES,
 } from '~/assets/constants'
@@ -35,14 +36,24 @@ import {
 export default Vue.extend({
   name: 'ProjectsPage',
   async asyncData({ $content }: Context) {
-    const projectData = await $content(PROJECT_CONTENT_ROUTE)
+    const allProjectData = await $content(PROJECT_CONTENT_ROUTE)
       .only([
         PROJECT_CONTENT_TITLES.TITLE,
         PROJECT_CONTENT_TITLES.DESCRIPTION,
         PROJECT_CONTENT_TITLES.COVER_IMAGE,
       ])
       .fetch()
-    return { projectData }
+    allProjectData.forEach(
+      // taking only the types which are required
+      (projectData: { customPath: string; path: string }) => {
+        projectData.customPath =
+          ProjectRoute.path +
+          '/' +
+          // remove the first two parts as they are just folder structure
+          projectData.path.split('/').slice(2).join('/')
+      }
+    )
+    return { allProjectData }
   },
   data() {
     return { PROJECT_CONTENT_TITLES }

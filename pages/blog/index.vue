@@ -15,7 +15,7 @@
       >
         <CardWorkDisplay
           :cover-image-link="blog[BLOG_CONTENT_TITLES.COVER_IMAGE]"
-          :destination-link="blog.path"
+          :destination-link="blog.customPath"
           :work-description="blog[BLOG_CONTENT_TITLES.DESCRIPTION]"
           :work-title="blog[BLOG_CONTENT_TITLES.TITLE]"
         />
@@ -27,7 +27,11 @@
 <script lang="ts">
 import { Context } from '@nuxt/types'
 import Vue from 'vue'
-import { BLOG_CONTENT_ROUTE, BLOG_CONTENT_TITLES } from '~/assets/constants'
+import {
+  BlogRoute,
+  BLOG_CONTENT_ROUTE,
+  BLOG_CONTENT_TITLES,
+} from '~/assets/constants'
 
 export default Vue.extend({
   name: 'BlogPage',
@@ -39,6 +43,16 @@ export default Vue.extend({
         BLOG_CONTENT_TITLES.COVER_IMAGE,
       ])
       .fetch()
+    allBlogData.forEach(
+      // taking only the types which are required
+      (blogData: { customPath: string; path: string }) => {
+        blogData.customPath =
+          BlogRoute.path +
+          '/' +
+          // remove the first two parts as they are just folder structure
+          blogData.path.split('/').slice(2).join('/')
+      }
+    )
     return { allBlogData }
   },
   data() {
