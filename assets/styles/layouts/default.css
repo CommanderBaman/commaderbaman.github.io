@@ -1,10 +1,14 @@
-.nuxt-main-container {
-  overflow: hidden;
-
-  width: 88vw;
+.custom-background {
+  position: fixed;
+  width: 100vw;
   height: 100vh;
 
+  overflow: hidden;
+  z-index: -1;
+}
+
+.nuxt-main-container {
   position: absolute;
-  right: 0;
+  left: 0;
   top: 0;
 }
