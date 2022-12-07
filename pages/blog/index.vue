@@ -37,11 +37,7 @@ export default Vue.extend({
   name: 'BlogPage',
   async asyncData({ $content }: Context) {
     const allBlogData = await $content(BLOG_CONTENT_ROUTE)
-      .only([
-        BLOG_CONTENT_TITLES.TITLE,
-        BLOG_CONTENT_TITLES.DESCRIPTION,
-        BLOG_CONTENT_TITLES.COVER_IMAGE,
-      ])
+      .without(['body', 'toc', 'dir'])
       .fetch()
     allBlogData.forEach(
       // taking only the types which are required

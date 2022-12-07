@@ -37,11 +37,7 @@ export default Vue.extend({
   name: 'ProjectsPage',
   async asyncData({ $content }: Context) {
     const allProjectData = await $content(PROJECT_CONTENT_ROUTE)
-      .only([
-        PROJECT_CONTENT_TITLES.TITLE,
-        PROJECT_CONTENT_TITLES.DESCRIPTION,
-        PROJECT_CONTENT_TITLES.COVER_IMAGE,
-      ])
+      .without(['body', 'toc', 'dir'])
       .fetch()
     allProjectData.forEach(
       // taking only the types which are required

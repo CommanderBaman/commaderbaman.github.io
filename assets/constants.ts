@@ -47,8 +47,8 @@ export const routes: CustomNavbarRoute[] = [
 ]
 
 // for nuxt content
-export const BLOG_CONTENT_ROUTE = '/blog'
-export const PROJECT_CONTENT_ROUTE = '/projects'
+export const BLOG_CONTENT_ROUTE = 'blog'
+export const PROJECT_CONTENT_ROUTE = 'projects'
 
 export const BLOG_CONTENT_TITLES = {
   TITLE: 'title',
