@@ -7,3 +7,25 @@
   column-gap: 2em;
   row-gap: 2em;
 }
+
+.article-wrapper {
+  width: 70vw;
+  margin: 0 15vw 5vw;
+}
+
+.article-title {
+  font-size: var(--font-size-48);
+  padding: 2em 0 0;
+  text-align: center;
+}
+
+.article-cover-image {
+  width: 40%;
+  margin: 0 30% 2vh;
+}
+
+.article-description {
+  padding: 2em;
+  text-align: center;
+  opacity: 0.8;
+}
