@@ -1,5 +1,6 @@
 .cover-image {
   width: 100%;
+  display: block;
   transition: all var(--short-transition-time);
 }
 
