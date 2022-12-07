@@ -27,6 +27,7 @@ export default Vue.extend({
     const projectData = await $content(route.path)
       .fetch()
       .catch((_) => {
+        // TODO: change to a variable from constants
         redirect('/projects')
       })
     return { projectData }
