@@ -33,7 +33,7 @@ export const routes = [
 
 // for nuxt content
 export const BLOG_CONTENT_ROUTE = 'blog'
-export const PROJECT_CONTENT_ROUTE = 'project'
+export const PROJECT_CONTENT_ROUTE = 'projects'
 
 export const BLOG_CONTENT_TITLES = {
   TITLE: 'title',
