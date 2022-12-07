@@ -87,6 +87,7 @@
   --border-size-0: 0.1px;
   --border-size-1: 0.15rem;
   --border-size-2: 0.3rem;
+  --border-size-4: 0.5rem;
 
   /* transition times */
   --short-transition-time: 0.2s;

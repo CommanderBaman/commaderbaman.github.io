@@ -1,8 +1,9 @@
-.projects-page {
-}
-
 .content-section {
+  width: 72%;
+  margin: auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  padding: 0 2em;
+  padding: 0 2em 2em;
+  column-gap: 2em;
+  row-gap: 2em;
 }
