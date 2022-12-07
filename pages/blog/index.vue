@@ -1,9 +1,10 @@
 <template>
-  <div class="about-page">
+  <div class="blog-page">
     <div class="heading-section">
-      <h1 class="back-heading">Introduction</h1>
+      <h1 class="back-heading">Blog</h1>
       <h2 class="main-heading">
-        <span class="heading-highlight"> About</span> Me
+        My
+        <span class="heading-highlight">Posts</span>
       </h2>
     </div>
   </div>
@@ -13,11 +14,11 @@
 import Vue from 'vue'
 
 export default Vue.extend({
-  name: 'AboutPage',
+  name: 'BlogPage',
 })
 </script>
 
 <style scoped>
 @import '~/assets/styles/pages/heading-section.css';
-@import '~/assets/styles/pages/about.css';
+@import '~/assets/styles/pages/blog.css';
 </style>
