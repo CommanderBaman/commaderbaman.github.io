@@ -1,7 +1,7 @@
 ---
 title: Traffic-MAN
 description: 'Handles traffic at an intersection'
-cover-photo: /photos/2.jpg
+cover-image: /images/dummy.jpeg
 ---
 
 ## Introduction

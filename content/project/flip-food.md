@@ -1,7 +1,7 @@
 ---
 title: Flip Food
 description: Copycat of Flipkart but for foood
-cover-photo: /photos/4.jpg
+cover-image: /images/dummy.jpeg
 ---
 
 ## Introduction

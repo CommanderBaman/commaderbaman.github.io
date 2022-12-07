@@ -1,7 +1,7 @@
 ---
 title: NAS with Raspberry Pi
 description: 'Raspberry Pi is a handy tool'
-cover-photo: /photos/2.jpg
+cover-image: /images/dummy.jpeg
 date-added: 2020-11-02
 ---
 

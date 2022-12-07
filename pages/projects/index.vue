@@ -15,7 +15,7 @@
       >
         {{ project[PROJECT_CONTENT_TITLES.TITLE] }} ||
         {{ project[PROJECT_CONTENT_TITLES.DESCRIPTION] }} ||
-        {{ project[PROJECT_CONTENT_TITLES.COVER_PHOTO] }}
+        {{ project[PROJECT_CONTENT_TITLES.COVER_IMAGE] }}
       </div>
     </div>
   </div>
@@ -36,7 +36,7 @@ export default Vue.extend({
       .only([
         PROJECT_CONTENT_TITLES.TITLE,
         PROJECT_CONTENT_TITLES.DESCRIPTION,
-        PROJECT_CONTENT_TITLES.COVER_PHOTO,
+        PROJECT_CONTENT_TITLES.COVER_IMAGE,
       ])
       .fetch()
     return { projectData }

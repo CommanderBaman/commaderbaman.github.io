@@ -38,11 +38,11 @@ export const PROJECT_CONTENT_ROUTE = 'project'
 export const BLOG_CONTENT_TITLES = {
   TITLE: 'title',
   DESCRIPTION: 'description',
-  COVER_PHOTO: 'cover-photo',
+  COVER_IMAGE: 'cover-image',
   DATE_ADDED: 'date-added',
 }
 export const PROJECT_CONTENT_TITLES = {
   TITLE: 'title',
   DESCRIPTION: 'description',
-  COVER_PHOTO: 'cover-photo',
+  COVER_IMAGE: 'cover-image',
 }

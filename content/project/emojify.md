@@ -1,7 +1,7 @@
 ---
 title: Emojify
 description: Emotion Detector
-cover-photo: /photos/3.jpg
+cover-image: /images/dummy.jpeg
 ---
 
 ## Introduction

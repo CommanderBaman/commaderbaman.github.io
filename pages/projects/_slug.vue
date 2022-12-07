@@ -11,7 +11,7 @@ export default Vue.extend({
   async asyncData({ params }) {
     // adding dummy await to remove errors
     const slug = await params.slug
-    console.log(slug)
+    // TODO: redirect if page not found
     return { slug }
   },
 })
