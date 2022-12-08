@@ -1,6 +1,6 @@
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
-  ssr: false,
+  ssr: true,
 
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
@@ -37,6 +37,8 @@ export default {
     '@nuxtjs/stylelint-module',
     // environment variables
     '@nuxtjs/dotenv',
+    // image
+    '@nuxt/image',
     // fontawesome
     '@nuxtjs/fontawesome',
     // google fonts
@@ -47,8 +49,6 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
-    // image
-    '@nuxt/image',
   ],
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
