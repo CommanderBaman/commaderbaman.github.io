@@ -10,5 +10,6 @@
 </template>
 
 <style scoped>
+@import '~/assets/styles/transitions.css';
 @import '~/assets/styles/layouts/default.css';
 </style>
