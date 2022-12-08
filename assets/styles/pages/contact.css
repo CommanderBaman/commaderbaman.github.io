@@ -1,5 +1,8 @@
 .contact-page {
-  width: 100vw;
+  width: 80vw;
+  margin: 0 9vw;
+  position: relative;
+  left: 1vw;
 }
 
 .contact-row {
