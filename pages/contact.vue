@@ -15,6 +15,14 @@ import Vue from 'vue'
 
 export default Vue.extend({
   name: 'ContactPage',
+  data() {
+    const envVariables = {
+      service: process.env.FORM_SERVICE_ID,
+      template: process.env.FORM_TEMPLATE_ID,
+      user: process.env.FORM_USER_ID,
+    }
+    return { envVariables }
+  },
 })
 </script>
 
