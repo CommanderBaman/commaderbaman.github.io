@@ -151,9 +151,12 @@ export default Vue.extend({
   },
   methods: {
     checkEmailCorrectness() {
-      // email can either be empty or an email
       // this fires only when it goes out of focus
-      this.isEmailCorrect = /(^$|^.*@.*\..*$)/.test(this.email)
+      // for checking only email
+      this.isEmailCorrect =
+        /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
+          this.email
+        ) || this.email === ''
     },
     sendEmail(e: any) {
       if (!this.isEmailCorrect) return
