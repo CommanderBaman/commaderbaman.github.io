@@ -37,8 +37,6 @@ export default {
     '@nuxtjs/stylelint-module',
     // environment variables
     '@nuxtjs/dotenv',
-    // image
-    '@nuxt/image',
     // fontawesome
     '@nuxtjs/fontawesome',
     // google fonts
@@ -49,6 +47,8 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
+    // image
+    '@nuxt/image',
   ],
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
