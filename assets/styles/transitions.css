@@ -2,7 +2,6 @@
 .page-leave-active,
 .page-enter-active {
   transition: all var(--long-transition-time);
-  overflow: hidden;
 }
 
 .page-leave-to {
@@ -15,6 +14,6 @@
   opacity: 0;
 }
 
-.page-leave-from {
+.page-leave {
   opacity: 1;
 }
