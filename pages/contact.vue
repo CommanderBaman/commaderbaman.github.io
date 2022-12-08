@@ -44,9 +44,7 @@
               Incorrect email
             </div>
           </div>
-          <div
-            class="message-input form-input-container form-input-container-2"
-          >
+          <div class="message-input form-input-container">
             <label class="form-input-label" for="message">Message</label>
             <textarea
               id="message"
@@ -60,7 +58,7 @@
             />
           </div>
           <input
-            class="form-input submit-button form-input-container-2"
+            class="form-input submit-button"
             type="submit"
             value="Submit"
           />
