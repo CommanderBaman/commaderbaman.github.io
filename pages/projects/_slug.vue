@@ -6,7 +6,7 @@
     <p class="article-description">
       {{ projectData[PROJECT_CONTENT_TITLES.DESCRIPTION] }}
     </p>
-    <NuxtImg
+    <img
       :src="projectData[PROJECT_CONTENT_TITLES.COVER_IMAGE]"
       loading="lazy"
       class="article-cover-image"
