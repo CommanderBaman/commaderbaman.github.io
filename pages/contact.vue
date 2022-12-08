@@ -10,19 +10,25 @@
     <div class="content-section">
       <div class="form-section">
         <p class="form-description">{{ formHelpMessage }}</p>
-        <form @submit.prevent="sendEmail">
-          <div class="name-input">
+        <form class="form-container" @submit.prevent="sendEmail">
+          <div class="name-input form-input-container">
+            <label class="form-input-label" for="name">Name</label>
             <input
+              id="name"
               v-model="name"
+              class="form-input"
               type="text"
               name="name"
               placeholder="Enter your Name"
               required
             />
           </div>
-          <div class="email-input">
+          <div class="email-input form-input-container">
+            <label class="form-input-label" for="email">Email</label>
             <input
+              id="email"
               v-model="email"
+              class="form-input"
               type="email"
               name="email"
               placeholder="Enter your Email"
@@ -31,23 +37,33 @@
               @change="checkEmailCorrectness"
             />
             <div
-              :class="`email-error-msg ${
+              :class="`email-error-message ${
                 isEmailCorrect ? 'email-error-hidden' : ''
               }`"
             >
-              Check email again
+              Incorrect email
             </div>
           </div>
-          <div class="message-input">
-            <input
+          <div
+            class="message-input form-input-container form-input-container-2"
+          >
+            <label class="form-input-label" for="message">Message</label>
+            <textarea
+              id="message"
               v-model.trim="message"
+              class="form-input"
               type="text"
               name="message"
               placeholder="Enter your Message"
+              rows="5"
               required
             />
           </div>
-          <input class="button" type="submit" value="Submit" />
+          <input
+            class="form-input submit-button form-input-container-2"
+            type="submit"
+            value="Submit"
+          />
         </form>
       </div>
       <div class="links-section">
@@ -55,14 +71,6 @@
           Or you can just contact me via the links below
         </div>
         <div class="contact-row">
-          <!-- github -->
-          <a
-            href="https://github.com/CommanderBaman"
-            target="_blank"
-            class="github contact-link"
-          >
-            <fa class="contact-icon" :icon="['fab', 'github']" />
-          </a>
           <!-- facebook -->
           <a
             href="https://www.facebook.com/shubham.ojha.90/"
