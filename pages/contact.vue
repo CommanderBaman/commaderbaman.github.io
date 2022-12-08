@@ -111,6 +111,8 @@
 
 <script lang="ts">
 import Vue from 'vue'
+import { sendForm } from '@emailjs/browser'
+
 const FORM_BLANK = 0
 const FORM_SUBMITTING = 1
 const FORM_ERROR = 2
@@ -150,6 +152,12 @@ export default Vue.extend({
     },
   },
   methods: {
+    clearForm() {
+      this.email = ''
+      this.name = ''
+      this.message = ''
+      this.formStatus = FORM_BLANK
+    },
     checkEmailCorrectness() {
       // this fires only when it goes out of focus
       // for checking only email
@@ -161,26 +169,27 @@ export default Vue.extend({
     sendEmail(e: any) {
       if (!this.isEmailCorrect) return
       this.formStatus = FORM_SUBMITTING
-      // sendForm(
-      //   process.env.FORM_SERVICE_ID || '',
-      //   process.env.FORM_TEMPLATE_ID || '',
-      //   e.target,
-      //   process.env.FORM_USER_ID
-      // ).then(
-      //   (result: any) => {
-      //     // eslint-disable-next-line no-console
-      //     console.info(`Form successfully submitted\nMessage: ${result.text}`)
-      //     this.formStatus = FORM_SUCCESS
-      //   },
-      //   (error: any) => {
-      //     // eslint-disable-next-line no-console
-      //     console.error(
-      //       `Form submission encountered error\nMessage: ${error.text}`
-      //     )
-      //     this.formStatus = FORM_ERROR
-      //   }
-      // )
-      e.target.reset()
+
+      sendForm(
+        process.env.FORM_SERVICE_ID || '',
+        process.env.FORM_TEMPLATE_ID || '',
+        e.target,
+        process.env.FORM_USER_ID
+      ).then(
+        (result: any) => {
+          // eslint-disable-next-line no-console
+          console.info(`Form successfully submitted\nMessage: ${result.text}`)
+          this.formStatus = FORM_SUCCESS
+          setTimeout(() => this.clearForm(), 4000)
+        },
+        (error: any) => {
+          // eslint-disable-next-line no-console
+          console.error(
+            `Form submission encountered error\nMessage: ${error.text}`
+          )
+          this.formStatus = FORM_ERROR
+        }
+      )
     },
   },
 })
