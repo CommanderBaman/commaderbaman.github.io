@@ -1,5 +1,16 @@
 .contact-page {
-  width: 100vw;
+  position: absolute;
+  left: 50vw;
+  transform: translateX(-50%);
+}
+
+/* fix page animations */
+.contact-page.page-enter {
+  transform: translate(-50%, 30vw);
+}
+
+.contact-page.page-leave-to {
+  transform: translate(-50%, -30vw);
 }
 
 .contact-row {
@@ -13,7 +24,7 @@
 }
 
 .content-section {
-  width: 70%;
+  width: 75%;
   margin: auto;
   font-size: var(--font-size-20);
 }
@@ -45,11 +56,9 @@
   border-radius: var(--border-radius-32);
 
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 2em;
+  grid-template-columns: 100%;
   row-gap: 1em;
-  padding: 1.2em;
-
+  padding: 1.2em 0;
   position: relative;
 }
 
@@ -75,15 +84,21 @@
 .form-input-container {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
-.form-input-container-2 {
+/* used for a different structure of form */
+/* .form-input-container-2 {
   grid-column: span 2;
-}
+} */
 
 .form-input-label {
   cursor: pointer;
   margin-bottom: 0.4em;
+}
+
+.links-section {
+  margin-bottom: 2em;
 }
 
 .submit-button {

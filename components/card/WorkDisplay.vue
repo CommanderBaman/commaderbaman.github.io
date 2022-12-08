@@ -2,11 +2,7 @@
   <NuxtLink :to="$props.destinationLink">
     <div class="work-display-card-wrapper">
       <div class="cover-image-wrapper">
-        <NuxtImg
-          :src="$props.coverImageLink"
-          loading="lazy"
-          class="cover-image"
-        />
+        <img :src="$props.coverImageLink" loading="lazy" class="cover-image" />
       </div>
       <div class="display-text-section">
         <h3 class="work-heading">{{ $props.workTitle }}</h3>

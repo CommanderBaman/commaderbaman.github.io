@@ -6,7 +6,7 @@
     <p class="article-description">
       {{ blogData[BLOG_CONTENT_TITLES.DESCRIPTION] }}
     </p>
-    <NuxtImg
+    <img
       :src="blogData[BLOG_CONTENT_TITLES.COVER_IMAGE]"
       loading="lazy"
       class="article-cover-image"
@@ -44,7 +44,7 @@ export default Vue.extend({
 </script>
 
 <style scoped>
-@import '~/assets/styles/pages/blog.css';
+@import '~/assets/styles/pages/works.css';
 </style>
 
 <style>

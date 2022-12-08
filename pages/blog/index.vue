@@ -59,5 +59,5 @@ export default Vue.extend({
 
 <style scoped>
 @import '~/assets/styles/pages/heading-section.css';
-@import '~/assets/styles/pages/blog.css';
+@import '~/assets/styles/pages/works.css';
 </style>
