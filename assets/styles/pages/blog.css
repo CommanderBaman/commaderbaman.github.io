@@ -8,9 +8,14 @@
   row-gap: 2em;
 }
 
+/*
+  have to ensure that the blog has a paragraph or any child div
+  that is bigger than the screen width of device
+*/
 .article-wrapper {
-  width: 70vw;
-  margin: 0 15vw 5vw;
+  max-width: 100vw;
+  width: 70%;
+  margin: auto;
 }
 
 .article-title {
