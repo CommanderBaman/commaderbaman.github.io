@@ -68,6 +68,8 @@
   padding: 0.5em 1em;
 
   font-family: var(--para-font-primary);
+
+  transition: all var(--short-transition-time);
 }
 
 .form-input-container {
@@ -80,6 +82,7 @@
 }
 
 .form-input-label {
+  cursor: pointer;
   margin-bottom: 0.4em;
 }
 

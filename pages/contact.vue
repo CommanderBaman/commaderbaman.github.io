@@ -146,7 +146,7 @@ export default Vue.extend({
         return 'Some error occured. Sorry for the inconvenience'
       }
       if (this.formStatus === FORM_SUCCESS) {
-        return 'We recieved your message, Thank you.'
+        return 'I recieved your message, Thank you. The form will be cleared in a few seconds'
       }
       return 'Code is going bonkers in here! Contact the developer quickly'
     },
