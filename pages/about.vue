@@ -19,7 +19,10 @@
       <div class="about-description">
         <p class="about-description-text">
           Hello! I am a student currently pursuing Dual Degree (B.Tech. +
-          M.Tech.) in Electrical Engineering from IIT Bombay
+          M.Tech.) in Electrical Engineering from IIT Bombay. <br />
+          I love building things from scratch, like I built this website using
+          NuxtJS. <br />
+          Feel free to peruse this site to know about me more
         </p>
         <a
           href="/documents/resume/11-2022.pdf"
