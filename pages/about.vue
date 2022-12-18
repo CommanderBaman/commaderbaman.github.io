@@ -11,55 +11,47 @@
         <img
           src="/images/about/portrait.jpg"
           alt="Shubham Ojha's portrait"
-          class="photo"
+          class="portrait"
         />
         <h3 class="name">Shubham Ojha</h3>
-        <div class="tagline">Student @IITB</div>
+        <p class="tagline">Student @IITB</p>
       </div>
       <div class="about-description">
         <p class="about-description-text">
           Hello! I am a student currently pursuing Dual Degree (B.Tech. +
           M.Tech.) in Electrical Engineering from IIT Bombay
         </p>
-        <div class="resume-link-container">
-          <a href="/documents/resume/11-2022.pdf" target="_blank" class="resume"
-            >See Resume</a
-          >
-        </div>
-        <div class="contact-icons">
+        <a
+          href="/documents/resume/11-2022.pdf"
+          target="_blank"
+          class="resume-link-container"
+        >
+          <div class="resume-text">See Resume</div>
+        </a>
+        <div class="contact-icons-section">
           <div class="contact-description">Contact me via...</div>
-          <!-- facebook -->
-          <a
-            href="https://www.facebook.com/shubham.ojha.90/"
-            target="_blank"
-            class="facebook contact-link"
-          >
-            <fa class="contact-icon" :icon="['fab', 'facebook']" />
-          </a>
-          <!-- linkedin -->
-          <a
-            href="https://www.linkedin.com/in/shubham-ojha-80b52a1a9/"
-            target="_blank"
-            class="linkedin contact-link"
-          >
-            <fa class="contact-icon" :icon="['fab', 'linkedin']" />
-          </a>
-          <!-- insta -->
-          <a
-            href="https://www.instagram.com/commander.baman/"
-            target="_blank"
-            class="insta contact-link"
-          >
-            <fa class="contact-icon" :icon="['fab', 'instagram']" />
-          </a>
-          <!-- mail -->
-          <a
-            href="mailto:shubhamojha18@gmail.com"
-            target="_blank"
-            class="mail contact-link"
-          >
-            <fa class="contact-icon" :icon="['far', 'envelope']" />
-          </a>
+          <div class="contact-icons-container">
+            <!-- facebook -->
+            <IconRoundDot
+              :icon-type="['fab', 'facebook-f']"
+              icon-link="https://www.facebook.com/shubham.ojha.90/"
+            />
+            <!-- linkedin -->
+            <IconRoundDot
+              :icon-type="['fab', 'linkedin-in']"
+              icon-link="https://www.linkedin.com/in/shubham-ojha-80b52a1a9/"
+            />
+            <!-- insta -->
+            <IconRoundDot
+              :icon-type="['fab', 'instagram']"
+              icon-link="https://www.instagram.com/commander.baman/"
+            />
+            <!-- mail -->
+            <IconRoundDot
+              :icon-type="['far', 'envelope']"
+              icon-link="mailto:shubhamojha18@gmail.com"
+            />
+          </div>
           <div class="contact-form">
             Or you can fill up this
             <NuxtLink class="contact-form-link" :to="ContactRoute.path">
@@ -69,17 +61,17 @@
         </div>
       </div>
     </div>
-    <div class="skills-section">
-      <h2>Skills</h2>
+    <div class="about-page-section skills-section">
+      <h2 class="about-page-heading">Skills</h2>
     </div>
-    <div class="education-section">
-      <h2>Education</h2>
+    <div class="about-page-section education-section">
+      <h2 class="about-page-heading">Education</h2>
     </div>
-    <div class="intern-section">
-      <h2>Work Experience</h2>
+    <div class="about-page-section intern-section">
+      <h2 class="about-page-heading">Work Experience</h2>
     </div>
-    <div class="por-section">
-      <h2>Positions held</h2>
+    <div class="about-page-section por-section">
+      <h2 class="about-page-heading">Positions held</h2>
     </div>
   </div>
 </template>

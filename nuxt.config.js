@@ -59,7 +59,14 @@ export default {
   fontawesome: {
     component: 'fa',
     icons: {
-      brands: ['faFacebook', 'faInstagram', 'faLinkedin', 'faGithub'],
+      brands: [
+        'faFacebook',
+        'faFacebookF',
+        'faInstagram',
+        'faLinkedin',
+        'faLinkedinIn',
+        'faGithub',
+      ],
       regular: ['faEnvelope'],
       solid: [
         'faAddressCard', // about
