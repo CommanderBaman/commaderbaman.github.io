@@ -69,21 +69,21 @@ export default {
       ],
       regular: [
         'faEnvelope', // mail
-        'faAtom', // newzera internship
-        'faDesktop', // citrix internship
-        'faGlobe', // umic web manager por
       ],
       solid: [
         'faAddressCard', // about
+        'faAtom', // newzera internship
         'faBook', // blog
         'faCodeFork', // project
-        'faHouse', // home
-        'faPhone', // contact
-        'faPersonSkiing', // on index page
+        'faDesktop', // citrix internship
+        'faGlobe', // umic web manager por
         'faGraduationCap', // college
-        'faSchool', // school
-        'faRobot', // erc por
+        'faHouse', // home
         'faMoneyBill', // moodI por
+        'faPersonSkiing', // on index page
+        'faPhone', // contact
+        'faRobot', // erc por
+        'faSchool', // school
       ],
     },
   },

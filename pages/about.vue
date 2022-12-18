@@ -81,16 +81,45 @@
     </div>
     <div class="about-page-section intern-section">
       <h2 class="about-page-heading">Work Experience</h2>
+      <div class="job-display-grid work-experience-grid">
+        <CardJobDisplay
+          v-for="work in WorkExperience"
+          :key="work.id"
+          :start-date="work.startDate"
+          :end-date="work.endDate"
+          :job-title="work.name"
+          :job-place="work.place"
+          :job-description="work.description"
+          :job-icon="work.icon"
+        />
+      </div>
     </div>
     <div class="about-page-section por-section">
       <h2 class="about-page-heading">Positions held</h2>
+      <div class="job-display-grid por-grid">
+        <CardJobDisplay
+          v-for="por in PositionOfResponsibilities"
+          :key="por.id"
+          :start-date="por.startDate"
+          :end-date="por.endDate"
+          :job-title="por.name"
+          :job-place="por.place"
+          :job-description="por.description"
+          :job-icon="por.icon"
+        />
+      </div>
     </div>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
-import { ContactRoute, Education } from '~/assets/constants'
+import {
+  ContactRoute,
+  Education,
+  PositionOfResponsibilities,
+  WorkExperience,
+} from '~/assets/constants'
 
 export default Vue.extend({
   name: 'AboutPage',
@@ -98,6 +127,8 @@ export default Vue.extend({
     return {
       ContactRoute,
       Education,
+      PositionOfResponsibilities,
+      WorkExperience,
     }
   },
 })

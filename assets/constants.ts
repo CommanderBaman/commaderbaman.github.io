@@ -103,7 +103,7 @@ export const CitrixIntern: Job = {
   place: 'Citrix',
   description:
     'Developed a cross-platform desktop application from scratch using ElectronJS',
-  icon: ['far', 'desktop'],
+  icon: ['fas', 'desktop'],
   id: 1,
 }
 
@@ -114,7 +114,7 @@ export const NewzeraIntern: Job = {
   place: 'Newzera',
   description:
     'Developed several pages and components for the primary web application using ReactJS',
-  icon: ['far', 'atom'],
+  icon: ['fas', 'atom'],
   id: 0,
 }
 
@@ -127,7 +127,7 @@ export const UmicWebManagerPor: Job = {
   place: 'UMIC, IIT Bombay',
   description:
     'Handled day to day operations of website of Unmesh Mashruvala Innovation Cell (UMIC), IIT Bombay',
-  icon: ['far', 'globe'],
+  icon: ['fas', 'globe'],
   id: 2,
 }
 
