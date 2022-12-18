@@ -62,6 +62,40 @@ export const PROJECT_CONTENT_TITLES = {
   COVER_IMAGE: 'cover-image',
 }
 
+// for about page
+export type Job = {
+  startDate: Date
+  endDate?: Date
+  name: string
+  place: string
+  description: string
+  icon: string[]
+  id: number
+}
+
+export const CollegeEducation: Job = {
+  startDate: new Date(2019, 6), // July 2019
+  endDate: new Date(2024, 6), // July 2024
+  name: 'Dual Degree (B.Tech. + M.Tech.)',
+  place: 'IIT Bombay',
+  description:
+    'Bachelors and Masters in Electrical Engineering from Indian Institute of Technology, Bombay',
+  icon: ['fas', 'graduation-cap'],
+  id: 1,
+}
+
+export const SchoolEducation: Job = {
+  startDate: new Date(2013, 2), // March 2013
+  endDate: new Date(2019, 2), // March 2024
+  name: 'High School',
+  place: 'Bhartiya Vidya Bhavan',
+  description: 'Passed 12th grade with 96% in CBSE boards',
+  icon: ['fas', 'school'],
+  id: 0,
+}
+
+export const Education: Job[] = [SchoolEducation, CollegeEducation]
+
 // for cards
 export const MONTHS = [
   'January',

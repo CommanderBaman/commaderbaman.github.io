@@ -14,7 +14,8 @@
   transition: all var(--short-transition-time);
 }
 
-.dot-icon-wrapper:hover {
+.dot-icon-wrapper:hover,
+.dot-icon-hover {
   background-color: var(--clr-primary);
   color: var(--clr-on-primary);
   border-color: transparent;

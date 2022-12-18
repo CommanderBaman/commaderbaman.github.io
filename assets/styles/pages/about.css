@@ -1,3 +1,7 @@
+.about-page {
+  padding-bottom: 2em;
+}
+
 .about-card {
   width: 50%;
   margin: auto;
@@ -82,4 +86,24 @@ p.tagline {
 
 .contact-form-link:hover {
   opacity: 0.8;
+}
+
+.about-page-section {
+  width: 80%;
+  margin: auto;
+  margin-top: 2em;
+}
+
+.about-page-heading {
+  font-size: var(--font-size-32);
+  color: var(--clr-on-bg);
+  text-transform: uppercase;
+}
+
+.job-display-grid {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  column-gap: 5%;
+  place-content: center;
+  margin: 2em 0 0;
 }

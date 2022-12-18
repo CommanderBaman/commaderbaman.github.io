@@ -2,7 +2,9 @@
   <a
     :href="`${$props.disabled ? '' : $props.iconLink}`"
     target="_blank"
-    :class="`${$props.disabled ? 'link-disabled' : ''} dot-icon-wrapper`"
+    :class="`${
+      $props.disabled ? 'link-disabled dot-icon-hover' : ''
+    } dot-icon-wrapper`"
   >
     <div class="dot-container">
       <fa class="dot-icon" :icon="$props.iconType" />

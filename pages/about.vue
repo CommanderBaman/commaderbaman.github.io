@@ -61,11 +61,23 @@
         </div>
       </div>
     </div>
-    <div class="about-page-section skills-section">
+    <!-- <div class="about-page-section skills-section">
       <h2 class="about-page-heading">Skills</h2>
-    </div>
+    </div> -->
     <div class="about-page-section education-section">
       <h2 class="about-page-heading">Education</h2>
+      <div class="job-display-grid education-grid">
+        <CardJobDisplay
+          v-for="edu in Education"
+          :key="edu.id"
+          :start-date="edu.startDate"
+          :end-date="edu.endDate"
+          :job-title="edu.name"
+          :job-place="edu.place"
+          :job-description="edu.description"
+          :job-icon="edu.icon"
+        />
+      </div>
     </div>
     <div class="about-page-section intern-section">
       <h2 class="about-page-heading">Work Experience</h2>
@@ -78,13 +90,14 @@
 
 <script lang="ts">
 import Vue from 'vue'
-import { ContactRoute } from '~/assets/constants'
+import { ContactRoute, Education } from '~/assets/constants'
 
 export default Vue.extend({
   name: 'AboutPage',
   data() {
     return {
       ContactRoute,
+      Education,
     }
   },
 })

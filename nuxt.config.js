@@ -75,6 +75,8 @@ export default {
         'faHouse', // home
         'faPhone', // contact
         'faPersonSkiing', // on index page
+        'faGraduationCap', // college
+        'faSchool', // school
       ],
     },
   },

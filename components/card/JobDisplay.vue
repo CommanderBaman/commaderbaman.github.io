@@ -1,16 +1,21 @@
 <template>
   <div class="job-display-card-wrapper">
-    <div class="job-duration">
-      {{ getJobDurationString($props.startDate, $props.endDate) }}
-    </div>
     <div class="job-heading-section">
       <h4 class="job-title">{{ $props.jobTitle }}</h4>
       <p class="job-place">{{ $props.jobPlace }}</p>
     </div>
+    <div class="job-duration">
+      {{ getJobDurationString($props.startDate, $props.endDate) }}
+    </div>
     <p class="job-description">
       {{ $props.jobDescription }}
     </p>
-    <IconRoundDot icon-link="" :icon-type="$props.jobIcon" disabled />
+    <IconRoundDot
+      class="job-icon"
+      icon-link=""
+      :icon-type="$props.jobIcon"
+      disabled
+    />
   </div>
 </template>
 
