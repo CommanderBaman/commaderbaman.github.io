@@ -67,7 +67,12 @@ export default {
         'faLinkedinIn',
         'faGithub',
       ],
-      regular: ['faEnvelope'],
+      regular: [
+        'faEnvelope', // mail
+        'faAtom', // newzera internship
+        'faDesktop', // citrix internship
+        'faGlobe', // umic web manager por
+      ],
       solid: [
         'faAddressCard', // about
         'faBook', // blog
@@ -77,6 +82,8 @@ export default {
         'faPersonSkiing', // on index page
         'faGraduationCap', // college
         'faSchool', // school
+        'faRobot', // erc por
+        'faMoneyBill', // moodI por
       ],
     },
   },
