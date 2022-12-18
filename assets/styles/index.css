@@ -59,6 +59,7 @@
   --px-to-rem: 0.0625rem;
 
   /* common font sizes */
+  --font-size-12: max(8px, calc(12 * var(--px-to-vw)));
   --font-size-16: max(12px, calc(18 * var(--px-to-vw)));
   --font-size-20: max(16px, calc(24 * var(--px-to-vw)));
   --font-size-24: max(20px, calc(29 * var(--px-to-vw)));
@@ -145,6 +146,7 @@ img {
 @media only screen and (min-width: 48em) {
   :root {
     /* common font sizes */
+    --font-size-12: max(12px, calc(18 * var(--px-to-vw)));
     --font-size-16: max(16px, calc(24 * var(--px-to-vw)));
     --font-size-20: max(20px, calc(29 * var(--px-to-vw)));
     --font-size-24: max(24px, calc(32 * var(--px-to-vw)));

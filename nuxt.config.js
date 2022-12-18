@@ -59,15 +59,31 @@ export default {
   fontawesome: {
     component: 'fa',
     icons: {
-      brands: ['faFacebook', 'faInstagram', 'faLinkedin', 'faGithub'],
-      regular: ['faEnvelope'],
+      brands: [
+        'faFacebook',
+        'faFacebookF',
+        'faInstagram',
+        'faLinkedin',
+        'faLinkedinIn',
+        'faGithub',
+      ],
+      regular: [
+        'faEnvelope', // mail
+      ],
       solid: [
         'faAddressCard', // about
+        'faAtom', // newzera internship
         'faBook', // blog
         'faCodeFork', // project
+        'faDesktop', // citrix internship
+        'faGlobe', // umic web manager por
+        'faGraduationCap', // college
         'faHouse', // home
-        'faPhone', // contact
+        'faMoneyBill', // moodI por
         'faPersonSkiing', // on index page
+        'faPhone', // contact
+        'faRobot', // erc por
+        'faSchool', // school
       ],
     },
   },
