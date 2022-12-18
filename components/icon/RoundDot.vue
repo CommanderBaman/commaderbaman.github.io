@@ -1,5 +1,9 @@
 <template>
-  <a :href="$props.iconLink" target="_blank" class="dot-icon-wrapper">
+  <a
+    :href="`${$props.disabled ? '' : $props.iconLink}`"
+    target="_blank"
+    :class="`${$props.disabled ? 'link-disabled' : ''} dot-icon-wrapper`"
+  >
     <div class="dot-container">
       <fa class="dot-icon" :icon="$props.iconType" />
     </div>
@@ -16,6 +20,10 @@ export default {
     iconLink: {
       type: String,
       required: true,
+    },
+    disabled: {
+      type: Boolean,
+      default: false,
     },
   },
 }

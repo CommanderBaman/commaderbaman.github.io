@@ -61,3 +61,19 @@ export const PROJECT_CONTENT_TITLES = {
   DESCRIPTION: 'description',
   COVER_IMAGE: 'cover-image',
 }
+
+// for cards
+export const MONTHS = [
+  'January',
+  'February',
+  'March',
+  'April',
+  'May',
+  'June',
+  'July',
+  'August',
+  'September',
+  'October',
+  'November',
+  'December',
+]
