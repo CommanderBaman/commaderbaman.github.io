@@ -1,3 +1,7 @@
+.nuxt-content-container {
+  padding: 2em 0;
+}
+
 .nuxt-content :is(h1, h2) {
   color: var(--clr-on-bg);
   font-size: var(--font-size-32);
@@ -22,23 +26,35 @@
   border-radius: var(--border-radius-8);
 }
 
+.nuxt-content .image-2,
 .nuxt-content .image-1 {
+  place-self: center;
   width: 100%;
 }
 
-.nuxt-content .image-1 img {
-  width: 50%;
-  margin: 0 25%;
-}
-
-.nuxt-content .image-2 {
-  width: 100%;
+.nuxt-content .image-1-container,
+.nuxt-content .image-2-container {
+  padding: 1em 0;
   display: flex;
+  flex-direction: column;
 }
 
-.nuxt-content .image-2 img {
-  width: 50%;
-  margin: 1em;
+.nuxt-content .image-1-container .image-1 {
+  width: 40%;
+}
+
+.nuxt-content .image-2-container .image-section {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  column-gap: 5%;
+  place-content: center;
+}
+
+.nuxt-content .image-2-container .image-2-caption,
+.nuxt-content .image-1-container .image-1-caption {
+  width: max-content;
+  margin: 1em auto;
+  opacity: 0.8;
 }
 
 .nuxt-content :is(ol, ul) {
@@ -48,4 +64,8 @@
 
 .nuxt-content ol {
   list-style: upper-roman;
+}
+
+.nuxt-content a {
+  text-decoration: underline;
 }
