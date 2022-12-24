@@ -84,6 +84,8 @@ export default {
         'faPhone', // contact
         'faRobot', // erc por
         'faSchool', // school
+        'faXmark', // close button
+        'faGripLines', // navbar opener
       ],
     },
   },

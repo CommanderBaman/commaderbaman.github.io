@@ -4,8 +4,7 @@
 
 .nav-icon-container {
   background-color: var(--clr-surface);
-  padding: 0.1em;
-  aspect-ratio: 1/1;
+  padding: 0.35em;
   border-radius: 50%;
   display: grid;
   place-items: center;
