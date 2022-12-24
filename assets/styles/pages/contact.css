@@ -2,6 +2,8 @@
   position: absolute;
   left: 50vw;
   transform: translateX(-50%);
+  max-width: 95vw;
+  overflow-y: hidden;
 }
 
 /* fix page animations */
@@ -45,11 +47,14 @@
   position: absolute;
   top: 0;
   right: 0;
-  transform: translate(0, 50%);
 }
 
 .email-error-hidden {
   opacity: 0;
+}
+
+.email-input {
+  position: relative;
 }
 
 .form-container {
@@ -116,4 +121,11 @@
 textarea.form-input {
   resize: none;
   padding: 1em;
+  border-radius: var(--border-radius-16);
+}
+
+@media only screen and (min-width: 48em) {
+  textarea.form-input {
+    border-radius: var(--border-radius-32);
+  }
 }

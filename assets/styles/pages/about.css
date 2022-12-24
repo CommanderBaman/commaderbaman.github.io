@@ -3,10 +3,9 @@
 }
 
 .about-card {
-  width: 50%;
+  width: 80%;
   margin: auto;
   display: grid;
-  grid-template-columns: 50% 50%;
 
   background-color: var(--clr-surface);
   padding: 1em;
@@ -90,8 +89,7 @@ p.tagline {
 
 .about-page-section {
   width: 80%;
-  margin: auto;
-  margin-top: 2em;
+  margin: 2em auto;
 }
 
 .about-page-heading {
@@ -102,9 +100,27 @@ p.tagline {
 
 .job-display-grid {
   display: grid;
-  grid-template-columns: 40% 40%;
   column-gap: 5%;
   row-gap: 2em;
   place-content: center;
-  margin: 2em 0 0;
+
+  width: 80%;
+  padding: 2em 0;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 48em) {
+  .about-card {
+    width: 50%;
+    grid-template-columns: 50% 50%;
+  }
+
+  .about-page-section {
+    margin-bottom: 0;
+  }
+
+  .job-display-grid {
+    grid-template-columns: 40% 40%;
+    width: 100%;
+  }
 }
