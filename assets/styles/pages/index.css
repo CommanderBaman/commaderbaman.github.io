@@ -6,6 +6,9 @@
 }
 
 .index-page {
+  --chosen-metric: min(1vw, 1vh);
+  --moon-length: 50;
+  --skiing-icon-size: 6;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -13,28 +16,30 @@
 }
 
 .moon {
-  width: 30vw;
-  height: 30vw;
+  width: calc(var(--chosen-metric) * var(--moon-length));
+  height: calc(var(--chosen-metric) * var(--moon-length));
 
   position: absolute;
   transform: translate(-42%, -67%);
 
   /* method 1 */
-  /* border-left: 5vw solid var(--clr-on-bg);
+  /* border-left: calc(var(--chosen-metric) * 5) solid var(--clr-on-bg);
   transform: translate(-50%, -50%) rotate(-40deg); */
 
   /* method 2 */
-  box-shadow: -4vw 4vw 1px 1vw var(--clr-on-bg);
+  box-shadow: calc(var(--chosen-metric) * -4) calc(var(--chosen-metric) * 4) 1px
+    calc(var(--chosen-metric) * 1) var(--clr-on-bg);
 
   border-radius: 50%;
 }
 
 .skiing-man {
   position: absolute;
-  bottom: 4vw;
-  right: 4vw;
-  font-size: var(--large-icon-size);
-  transform: rotate(-60deg);
+  --multiplier: 0.2; /* near to (root(2) - 1) / (2 * root(2)) = 0.146 /* 2 as moon length is diameter*/
+  bottom: calc(var(--chosen-metric) * var(--multiplier) * var(--moon-length));
+  right: calc(var(--chosen-metric) * var(--multiplier) * var(--moon-length));
+  font-size: calc(var(--chosen-metric) * var(--skiing-icon-size));
+  transform: translate(50%, 50%) rotate(-60deg);
 }
 
 .spot {
@@ -48,42 +53,48 @@
 }
 
 .spot-1 {
-  height: 2vw;
-  width: 2vw;
+  height: calc(var(--chosen-metric) * 2);
+  width: calc(var(--chosen-metric) * 2);
   bottom: 14%;
   left: 6%;
 }
 
 .spot-2 {
-  height: 1.5vw;
-  width: 1.5vw;
+  height: calc(var(--chosen-metric) * 1.5);
+  width: calc(var(--chosen-metric) * 1.5);
   bottom: 8%;
   left: 11%;
 }
 
 .spot-3 {
-  height: 1vw;
-  width: 1vw;
+  height: calc(var(--chosen-metric) * 1);
+  width: calc(var(--chosen-metric) * 1);
   bottom: 9%;
   left: 3%;
 }
 
 .spot-4 {
-  height: 5vw;
-  width: 5vw;
+  height: calc(var(--chosen-metric) * 5);
+  width: calc(var(--chosen-metric) * 5);
   bottom: 14%;
-  left: -20%;
+  left: -10%;
 }
 /*
 .spot-5 {
-  height: 3vw;
-  width: 3vw;
+  height: calc(var(--chosen-metric) * 3);
+  width: calc(var(--chosen-metric) * 3);
   bottom: -23%;
   left: 30%;
 } */
 
 .text-container {
   position: absolute;
-  left: 25%;
-  top: 50%;
+  left: 10%;
+  top: 40%;
+}
+
+@media only screen and (min-width: 48em) {
+  .index-page {
+    --moon-length: 40;
+  }
 }
