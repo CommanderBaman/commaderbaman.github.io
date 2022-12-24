@@ -25,8 +25,8 @@ import { getRandomInteger } from '~/tools/DataHandler'
 const SUM_OF_ALL_AREAS = 550
 const MAX_RADII = 4
 // to increase area density for shorter areas
-const SLOPE = -0.15
-const CONSTANT = 1.15
+const SLOPE = -1
+const CONSTANT = 1 - SLOPE // fixed 550 for 1920x1080 screens
 
 export default {
   data() {
