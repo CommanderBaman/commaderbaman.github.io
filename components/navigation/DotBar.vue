@@ -1,11 +1,12 @@
 <template>
   <nav class="navbar">
-    <ul class="links-container">
+    <transition-group name="slide-fade" tag="ul" class="links-container">
       <li
         v-for="(route, index) in routes"
+        v-show="navOpen"
         :key="route.id"
-        :class="`link-wrapper ${navOpen ? 'link-visible' : ''}`"
-        :style="`transition-delay: ${index * 0.1}s`"
+        :class="`link-wrapper`"
+        :style="`transition-delay: ${index * 0.05}s`"
       >
         <!--
           the active link would also be active if its children are opened
@@ -18,7 +19,7 @@
           :route-name="route.name"
         />
       </li>
-    </ul>
+    </transition-group>
     <div class="navbar-handler-wrapper">
       <transition-group name="fader" mode="out-in">
         <!-- <fa

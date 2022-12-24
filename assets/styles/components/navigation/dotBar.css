@@ -15,15 +15,6 @@
 
 .link-wrapper {
   position: relative;
-  transition: all var(--long-transition-time);
-
-  transform: translate(-200px);
-  opacity: 0;
-}
-
-.link-visible {
-  opacity: 1;
-  transform: translate(0);
 }
 
 .navbar-handler-wrapper {
