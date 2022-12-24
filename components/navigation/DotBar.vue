@@ -16,25 +16,29 @@
       </li>
     </ul>
     <div class="navbar-handler-wrapper">
-      <!-- <fa
+      <transition-group name="fader" mode="out-in">
+        <!-- <fa
         :class="`navbar-handler ${
           navOpen ? 'navbar-closer' : 'navbar-opener'
         }`"
         :icon="['fas', navOpen ? 'xmark' : 'grip-lines']"
         @click="navOpen = !navOpen"
       /> -->
-      <fa
-        v-if="navOpen"
-        class="navbar-handler navbar-closer"
-        :icon="['fas', 'xmark']"
-        @click="navOpen = false"
-      />
-      <fa
-        v-else
-        class="navbar-handler navbar-opener"
-        :icon="['fas', 'grip-lines']"
-        @click="navOpen = true"
-      />
+        <fa
+          v-if="navOpen"
+          :key="0"
+          class="navbar-handler navbar-closer"
+          :icon="['fas', 'xmark']"
+          @click="navOpen = false"
+        />
+        <fa
+          v-else
+          :key="1"
+          class="navbar-handler navbar-opener"
+          :icon="['fas', 'grip-lines']"
+          @click="navOpen = true"
+        />
+      </transition-group>
     </div>
   </nav>
 </template>
@@ -54,5 +58,6 @@ export default {
 </script>
 
 <style scoped>
+@import '~/assets/styles/transitions.css';
 @import '~/assets/styles/components/navigation/dotBar.css';
 </style>

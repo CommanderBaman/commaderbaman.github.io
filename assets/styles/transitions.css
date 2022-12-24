@@ -17,3 +17,19 @@
 .page-leave {
   opacity: 1;
 }
+
+/* fade in */
+.fader-enter-active,
+.fader-leave-active {
+  transition: all var(--short-transition-time);
+}
+
+.fader-enter,
+.fader-leave-to {
+  opacity: 0;
+}
+
+.fader-enter-to,
+.fader-leave {
+  opacity: 1;
+}
