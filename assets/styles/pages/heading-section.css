@@ -9,7 +9,7 @@
 
 .back-heading {
   color: var(--clr-surface);
-  margin: 0.5em 0;
+  margin: 0.8em 0;
   text-align: center;
   font-size: var(--font-size-64);
   letter-spacing: 0.2ch;
@@ -37,5 +37,6 @@
 @media only screen and (min-width: 48em) {
   .back-heading {
     font-size: var(--font-size-96);
+    margin: 0.5em 0;
   }
 }
