@@ -53,7 +53,7 @@ import { routes } from '~/assets/constants'
 
 export default {
   data() {
-    const navOpen = true
+    const navOpen = false
     return {
       navOpen,
       routes,
