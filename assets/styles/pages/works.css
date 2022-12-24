@@ -1,4 +1,4 @@
-/* contains common css for work display sites - projects and blog */
+/* this file contains common css for work display sites - projects and blog */
 .content-section {
   width: 72%;
   margin: auto;
@@ -9,7 +9,8 @@
 }
 
 /*
-  have to ensure that the project has a paragraph or any child div
+  TODO: make it independent of content
+  Currently, have to ensure that the project has a paragraph or any child div
   that is bigger than the screen width of device
 */
 .article-wrapper {
