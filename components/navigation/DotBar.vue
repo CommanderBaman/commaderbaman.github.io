@@ -1,20 +1,26 @@
 <template>
   <nav class="navbar">
-    <ul class="links-container">
-      <li v-for="route in routes" :key="route.id" class="link-wrapper">
-        <!--
+    <transition name="rise-fade">
+      <ul v-show="navOpen" class="links-container">
+        <li
+          v-for="(route, index) in routes"
+          :key="route.id"
+          class="link-wrapper"
+          :style="`transition-delay: ${index * 0.1}s`"
+        >
+          <!--
           the active link would also be active if its children are opened
           example: blog will light up if /blog or /blog/23/46534 is there
         -->
-        <NavigationDotIcon
-          v-show="navOpen"
-          :currently-opened="route.path === '/' + $route.path.split('/')[1]"
-          :icon="route.icon"
-          :route-link="route.path"
-          :route-name="route.name"
-        />
-      </li>
-    </ul>
+          <NavigationDotIcon
+            :currently-opened="route.path === '/' + $route.path.split('/')[1]"
+            :icon="route.icon"
+            :route-link="route.path"
+            :route-name="route.name"
+          />
+        </li>
+      </ul>
+    </transition>
     <div class="navbar-handler-wrapper">
       <transition-group name="fader" mode="out-in">
         <!-- <fa

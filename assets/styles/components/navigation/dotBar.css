@@ -13,6 +13,10 @@
   bottom: calc(var(--vertical-space) + 1.5 * var(--large-icon-size));
 }
 
+.link-wrapper {
+  position: relative;
+}
+
 .navbar-handler-wrapper {
   position: fixed;
   bottom: var(--vertical-space);

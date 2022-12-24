@@ -18,6 +18,24 @@
   opacity: 1;
 }
 
+/* fade in from below */
+.rise-fade-leave-active,
+.rise-fade-enter-active {
+  transition: all var(--long-transition-time);
+  position: relative;
+}
+
+.rise-fade-enter,
+.rise-fade-leave-to {
+  transform: translateY(-20px);
+  opacity: 0;
+}
+
+.rise-fade-enter-to,
+.rise-fade-leave {
+  opacity: 1;
+}
+
 /* fade in */
 .fader-enter-active,
 .fader-leave-active {
