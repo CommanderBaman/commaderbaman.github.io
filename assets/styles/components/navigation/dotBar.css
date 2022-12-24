@@ -15,6 +15,15 @@
 
 .link-wrapper {
   position: relative;
+  transition: all var(--long-transition-time);
+
+  transform: translate(-200px);
+  opacity: 0;
+}
+
+.link-visible {
+  opacity: 1;
+  transform: translate(0);
 }
 
 .navbar-handler-wrapper {
@@ -52,6 +61,7 @@
   .links-container {
     bottom: unset;
     top: calc(var(--vertical-space) + 1.5 * var(--large-icon-size));
+    direction: ltr;
   }
   .navbar-handler-wrapper {
     bottom: unset;
