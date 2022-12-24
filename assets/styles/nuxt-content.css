@@ -1,6 +1,6 @@
-.nuxt-content :is(h1, h2) {
-  color: var(--clr-on-bg);
-  font-size: var(--font-size-32);
+.nuxt-content-container {
+  padding: 2em 0;
+  line-height: 1.25em;
 }
 
 .nuxt-content > * {
@@ -11,8 +11,18 @@
   text-decoration: underline;
 }
 
+/* headings */
+.nuxt-content :is(h1, h2, h3) {
+  color: var(--clr-on-bg);
+  font-size: var(--font-size-32);
+}
+
+.nuxt-content h3 {
+  font-size: var(--font-size-24);
+}
+
 .nuxt-content :is(h1, h2, h3, h4, h5, h6) {
-  margin: 0.5em 0;
+  margin: 1em 0;
 }
 
 .nuxt-content iframe {
@@ -22,30 +32,94 @@
   border-radius: var(--border-radius-8);
 }
 
+/* images */
+.nuxt-content .image-3,
+.nuxt-content .image-2,
 .nuxt-content .image-1 {
+  place-self: center;
   width: 100%;
 }
 
-.nuxt-content .image-1 img {
-  width: 50%;
-  margin: 0 25%;
-}
-
-.nuxt-content .image-2 {
-  width: 100%;
+.nuxt-content .image-1-container,
+.nuxt-content .image-2-container,
+.nuxt-content .image-3-container {
+  padding: 1em 0;
   display: flex;
+  flex-direction: column;
 }
 
-.nuxt-content .image-2 img {
+.nuxt-content .image-1-container .image-1 {
   width: 50%;
-  margin: 1em;
 }
 
+.nuxt-content .image-2-container .image-section {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  column-gap: 5%;
+  place-content: center;
+}
+
+.nuxt-content .image-3-container .image-section {
+  display: grid;
+  grid-template-columns: 28% 28% 28%;
+  column-gap: 5%;
+  place-content: center;
+}
+
+.nuxt-content .image-3-container .image-3-caption,
+.nuxt-content .image-2-container .image-2-caption,
+.nuxt-content .image-1-container .image-1-caption {
+  width: max-content;
+  margin: 1em auto;
+  opacity: 0.8;
+}
+
+.nuxt-content .image-3-container .image-3-caption::before,
+.nuxt-content .image-2-container .image-2-caption::before,
+.nuxt-content .image-1-container .image-1-caption::before {
+  content: 'Figure: ';
+}
+
+.nuxt-content .long-image {
+  width: 80% !important;
+}
+
+.nuxt-content .short-image {
+  width: 30% !important;
+}
+
+/* lists */
 .nuxt-content :is(ol, ul) {
   list-style: disc;
-  padding-left: 1em;
+  padding: 1em 0 1em 1em;
+}
+
+.nuxt-content :is(ol, ul) li {
+  padding: 0.3em 0;
 }
 
 .nuxt-content ol {
   list-style: upper-roman;
+}
+
+/* links */
+.nuxt-content a {
+  text-decoration: underline;
+}
+
+/* code blocks */
+.nuxt-content pre {
+  background-color: var(--clr-surface);
+  border-radius: var(--border-radius-8);
+  color: var(--clr-on-surface);
+  margin: 1em 0;
+}
+
+/* text decorations */
+.nuxt-content strong {
+  font-weight: bolder;
+}
+
+.nuxt-content em {
+  font-style: italic;
 }
